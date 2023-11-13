@@ -1,18 +1,20 @@
 public class Radio {
-    private int count=10;
+    private int count = 10;
     private int firstStation = 0;
-    private int lastStation = count -1;
+    private int lastStation = count - 1;
     private int currentStation = firstStation;
     private int volume = 0;
 
     public Radio() {
 
     }
-    public Radio (int count){
-        this.count=count;
-        lastStation=count-1;
-        currentStation=firstStation;
+
+    public Radio(int count) {
+        this.count = count;
+        lastStation = count - 1;
+        currentStation = firstStation;
     }
+
     public int getCurrentStationStation() {
         return currentStation;
     }
@@ -24,6 +26,7 @@ public class Radio {
             return;
         }
     }
+
     public int getFirstStation() {
         return firstStation;
     }
@@ -31,6 +34,7 @@ public class Radio {
     public int getLastStation() {
         return lastStation;
     }
+
     public int getVolume() {
         return volume;
     }

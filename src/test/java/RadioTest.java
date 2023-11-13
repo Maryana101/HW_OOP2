@@ -7,8 +7,8 @@ public class RadioTest {
     public void shouldSetCountOfStation() {
         Radio radio = new Radio(25);
         Assertions.assertEquals(0, radio.getFirstStation());
-        Assertions.assertEquals(24,radio.getLastStation());
-        Assertions.assertEquals(0,radio.getCurrentStationStation());
+        Assertions.assertEquals(24, radio.getLastStation());
+        Assertions.assertEquals(0, radio.getCurrentStationStation());
     }
 
     @Test
@@ -16,8 +16,8 @@ public class RadioTest {
         Radio radio = new Radio(25);
         radio.next();
         Assertions.assertEquals(0, radio.getFirstStation());
-        Assertions.assertEquals(24,radio.getLastStation());
-        Assertions.assertEquals(1,radio.getCurrentStationStation());
+        Assertions.assertEquals(24, radio.getLastStation());
+        Assertions.assertEquals(1, radio.getCurrentStationStation());
     }
 
     @Test
@@ -27,8 +27,8 @@ public class RadioTest {
             radio.prev();
         }
         Assertions.assertEquals(0, radio.getFirstStation());
-        Assertions.assertEquals(15,radio.getLastStation());
-        Assertions.assertEquals(11,radio.getCurrentStationStation());
+        Assertions.assertEquals(15, radio.getLastStation());
+        Assertions.assertEquals(11, radio.getCurrentStationStation());
     }
 
     @Test
@@ -36,8 +36,8 @@ public class RadioTest {
         Radio radio = new Radio(44);
         radio.setCurrentStation(12);
         Assertions.assertEquals(0, radio.getFirstStation());
-        Assertions.assertEquals(43,radio.getLastStation());
-        Assertions.assertEquals(12,radio.getCurrentStationStation());
+        Assertions.assertEquals(43, radio.getLastStation());
+        Assertions.assertEquals(12, radio.getCurrentStationStation());
     }
 
 
